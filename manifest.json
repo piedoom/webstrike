@@ -5,7 +5,7 @@
     "version": "0.1",
     "browser_action": {
         "default_title": "WebStrike On",
-        "default_popup": "wstab.html"
+        "default_popup": "src/html/wstab.html"
     },
     "permissions": [
         "webRequest",
@@ -14,7 +14,7 @@
     ],
     "background": {
         "scripts": [
-            "webstrike.js"
+            "src/js/webstrike.js"
         ],
         "persistent": true
     }
