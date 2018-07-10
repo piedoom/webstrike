@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "WebStrike",
+    "description": "Easily block websites during worker strikes and make a bigger impact.",
+    "version": "0.1",
+    "browser_action": {
+        "default_title": "WebStrike On",
+        "default_popup": "wstab.html"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "webstrike.js"
+        ],
+        "persistent": true
+    }
+}
