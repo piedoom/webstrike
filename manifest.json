@@ -5,12 +5,13 @@
     "version": "0.1",
     "browser_action": {
         "default_title": "WebStrike On",
-        "default_popup": "src/html/wstab.html"
+        "default_popup": "src/html/popup.html"
     },
     "permissions": [
         "webRequest",
         "webRequestBlocking",
-        "<all_urls>"
+        "<all_urls>",
+        "storage"
     ],
     "background": {
         "scripts": [

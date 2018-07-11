@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Amazon Strike",
+        "times": {
+            "start": "2018-06-15T19:00:00.000Z",
+            "end": "2018-07-17T07:00:00.000Z"
+        },
+        "sites": [
+            "amazon.com",
+            "elemental.com",
+            "a9.com",
+            "abebooks.com",
+            "alexa.com",
+            "audible.com",
+            "blinkforhome.com",
+            "brillianceaudio.com",
+            "comixology.com",
+            "createspace.com",
+            "diapers.com",
+            "doublehelixgames.com",
+            "evi.com",
+            "lab126.com",
+            "apub.com",
+            "amazonrobotics.com",
+            "bodylabs.com",
+            "bookdepository.com",
+            "dpreview.com",
+            "goodreads.com",
+            "graphiq.com",
+            "imdb.com",
+            "ring.com",
+            "twitch.com",
+            "wholefoodsmarket.com",
+            "woot.com",
+            "zappos.com",
+            "fabric.com",
+            "mobipocket.com",
+            "shelfari.com",
+            "souq.com",
+            "tenmarks.com"
+        ]
+    }
+]
