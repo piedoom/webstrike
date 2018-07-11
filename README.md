@@ -4,7 +4,7 @@ This extension disables access to a website or collection of websites to help ph
 
 # Installing
 
-[Try here](https://chrome.google.com/webstore/detail/gncbiclggjkgcnecfcfpdclkdojpjajj).  If it's not up yet, try [installing the old fashioned way](https://stackoverflow.com/questions/24577024/install-chrome-extension-not-in-the-store).
+[Try here](https://chrome.google.com/webstore/detail/gncbiclggjkgcnecfcfpdclkdojpjajj).  If it's not up yet, try [installing the old fashioned way](https://stackoverflow.com/questions/24577024/install-chrome-extension-not-in-the-store).  Download this repository as a `zip`, extract it, and then select the folder when installing according to the linked guide.
 
 ## `strikes.json`
 
