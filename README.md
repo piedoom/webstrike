@@ -2,6 +2,10 @@
 
 This extension disables access to a website or collection of websites to help physical strikers get what they need.
 
+# Installing
+
+[Try here](https://chrome.google.com/webstore/detail/gncbiclggjkgcnecfcfpdclkdojpjajj).  If it's not up yet, try [installing the old fashioned way](https://stackoverflow.com/questions/24577024/install-chrome-extension-not-in-the-store).
+
 ## `strikes.json`
 
 This is the list of websites for a strike.  It'd be great to simply query GitHub in the future, but for now the extension can only be updated via the chrome store / manually editing and installing.
