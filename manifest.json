@@ -14,7 +14,9 @@
         "webRequest",
         "webRequestBlocking",
         "<all_urls>",
-        "storage"
+        "storage",
+        "notifications",
+        "alarms"
     ],
     "background": {
         "scripts": [
