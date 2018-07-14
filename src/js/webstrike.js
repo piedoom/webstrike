@@ -57,12 +57,12 @@ function listenerHandler() {
 
                 // see if our current time lies within the strike time
                 res.data.forEach(function (strike) {
-                    // if (currentTime >= Date.parse(strike.times.start) && currentTime <= Date.parse(strike.times.end)) {
+                    if (currentTime >= Date.parse(strike.times.start) && currentTime <= Date.parse(strike.times.end)) {
                         currentStrikes.push(strike);
                         strike.sites.forEach(function (site) {
                             sitesBlocked.push(site);
                         })
-                    // };
+                    };
                 });
 
                 var dataStore = {
