@@ -1,4 +1,4 @@
-# WebStrike for Chrome
+# WebStrike for Chrome AND Firefox
 
 This extension disables access to a website or collection of websites to help physical strikers get what they need.
 
