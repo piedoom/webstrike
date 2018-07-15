@@ -70,6 +70,9 @@ function listenerHandler() {
                     currentStrikes: currentStrikes,
                     sitesBlocked: sitesBlocked
                 }
+
+                chrome.storage.local.set(dataStore);
+
                 if (chrome.webRequest.onBeforeRequest.hasListener(siteBlocker)) {
                     chrome.webRequest.onBeforeRequest.removeListener(siteBlocker);
                 }

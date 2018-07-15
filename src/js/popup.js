@@ -1,5 +1,5 @@
 (function () {
-    chrome.storage.sync.get(['strikes', 'currentStrikes', 'sitesBlocked'], function (items) {
+    chrome.storage.local.get(['strikes', 'currentStrikes', 'sitesBlocked'], function (items) {
         var currentTime = Date.now();
         items.futureStrikes = [];
         items.strikes.forEach(function (strike) {
@@ -27,7 +27,9 @@
             el.appendChild(strikeStartEl);
 
             strikeNameEl.appendChild(document.createTextNode(strike.name));
-            strikeStartEl.appendChild(document.createTextNode(strike.times.start.toLocaleString()));
+            let startDateObj = new Date(Date.parse(strike.times.start));
+            strikeStartEl.appendChild(document.createTextNode(startDateObj.toLocaleString(navigator.language, {
+                timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone})));
             container.appendChild(el);
         })
         return container;
@@ -43,7 +45,9 @@
             el.appendChild(strikeStartEl);
 
             strikeNameEl.appendChild(document.createTextNode(strike.name));
-            strikeStartEl.appendChild(document.createTextNode(strike.times.start.toLocaleString()));
+            let startDateObj = new Date(Date.parse(strike.times.start));
+            strikeStartEl.appendChild(document.createTextNode(startDateObj.toLocaleString(navigator.language, { 
+                timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone })));
             container.appendChild(el);
         })
         return container;
