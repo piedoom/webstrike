@@ -13,7 +13,6 @@ chrome.alarms.create("fetcher", {
 
 function siteBlocker() {
     if (sitesBlocked.length != 0) {
-        console.log("Should be making a notification now");
         let options = {
             "type": "basic",
             "iconUrl": chrome.extension.getURL("../../icon128.png"),
@@ -70,6 +69,9 @@ function listenerHandler() {
                     currentStrikes: currentStrikes,
                     sitesBlocked: sitesBlocked
                 }
+
+                chrome.storage.local.set(dataStore);
+
                 if (chrome.webRequest.onBeforeRequest.hasListener(siteBlocker)) {
                     chrome.webRequest.onBeforeRequest.removeListener(siteBlocker);
                 }
@@ -81,7 +83,6 @@ function listenerHandler() {
 }
 
 function handleAlarms(alarmInfo) {
-    console.log("Started handleAlarms")
     if (alarmInfo.name === "notification") {
         chrome.notifications.clear("blocked");
     } else {
